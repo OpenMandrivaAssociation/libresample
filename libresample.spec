@@ -56,6 +56,7 @@ This package contains the static libresample library and its header files.
 %patch0 -p0
 
 %build
+export CC="%{__cc}"
 export CFLAGS="%{optflags} -fPIC"
 
 %configure
