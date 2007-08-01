@@ -67,6 +67,8 @@ rm -rf %{buildroot}
 
 %makeinstall_std
 
+rm -rf %{buildroot}%{_bindir}
+
 %post -n %{libname} -p /sbin/ldconfig
 
 %postun -n %{libname} -p /sbin/ldconfig
@@ -74,11 +76,11 @@ rm -rf %{buildroot}
 %clean
 rm -rf %{buildroot}
 
-%files -n resample
-%defattr(-,root,root)
-%{_bindir}/compareresample
-%{_bindir}/resample-sndfile
-%{_bindir}/testresample
+#%files -n resample
+#%defattr(-,root,root)
+#%{_bindir}/compareresample
+#%{_bindir}/resample-sndfile
+#%{_bindir}/testresample
 
 %files -n %{libname}
 %defattr(-,root,root)
