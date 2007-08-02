@@ -12,6 +12,7 @@ URL:		http://www-ccrma.stanford.edu/~jos/resample/Available_Software.html
 Source0:	http://ccrma.stanford.edu/~jos/resample/%{name}-%{version}.tgz
 Patch0:		libresample-shared.diff
 BuildRequires:	libsndfile-devel
+BuildRequires:	libsamplerate-devel
 BuildRequires:	libtool
 BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 
@@ -64,8 +65,6 @@ export CFLAGS="%{optflags} -fPIC"
 
 %install
 rm -rf %{buildroot}
-
-export CC="%{__cc}"
 
 %makeinstall_std
 
