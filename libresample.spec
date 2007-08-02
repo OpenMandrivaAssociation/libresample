@@ -65,9 +65,9 @@ export CFLAGS="%{optflags} -fPIC"
 %install
 rm -rf %{buildroot}
 
-%makeinstall_std
+export CC="%{__cc}"
 
-rm -rf %{buildroot}%{_bindir}
+%makeinstall_std
 
 %post -n %{libname} -p /sbin/ldconfig
 
@@ -76,11 +76,11 @@ rm -rf %{buildroot}%{_bindir}
 %clean
 rm -rf %{buildroot}
 
-#%files -n resample
-#%defattr(-,root,root)
-#%{_bindir}/compareresample
-#%{_bindir}/resample-sndfile
-#%{_bindir}/testresample
+%files -n resample
+%defattr(-,root,root)
+%{_bindir}/compareresample
+%{_bindir}/resample-sndfile
+%{_bindir}/testresample
 
 %files -n %{libname}
 %defattr(-,root,root)
