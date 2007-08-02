@@ -5,7 +5,7 @@
 Summary:	A real-time library for sampling rate conversion
 Name:		libresample
 Version:	0.1.3
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	LGPL
 Group:		System/Libraries
 URL:		http://www-ccrma.stanford.edu/~jos/resample/Available_Software.html
@@ -19,11 +19,11 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 %description
 libresample is a real-time library for sampling rate conversion.
 
-%package -n	resample
+%package	tools
 Summary:	Various tools using the libresample library
 Group:          Sound
 
-%description -n	resample
+%description	tools
 libresample is a real-time library for sampling rate conversion.
 
 This package contains various tools that uses the libresample library.
@@ -75,7 +75,7 @@ rm -rf %{buildroot}
 %clean
 rm -rf %{buildroot}
 
-%files -n resample
+%files tools
 %defattr(-,root,root)
 %{_bindir}/compareresample
 %{_bindir}/resample-sndfile
