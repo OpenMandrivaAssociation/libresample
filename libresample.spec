@@ -14,6 +14,7 @@ Patch0:		libresample-shared.diff
 BuildRequires:	libsndfile-devel
 BuildRequires:	libsamplerate-devel
 BuildRequires:	libtool
+BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 
 %description
 libresample is a real-time library for sampling rate conversion.
