@@ -5,7 +5,7 @@
 Summary:	A real-time library for sampling rate conversion
 Name:		libresample
 Version:	0.1.3
-Release:	%mkrel 3
+Release:	%mkrel 4
 License:	LGPL
 Group:		System/Libraries
 URL:		http://www-ccrma.stanford.edu/~jos/resample/Available_Software.html
