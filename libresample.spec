@@ -5,7 +5,7 @@
 Summary:	A real-time library for sampling rate conversion
 Name:		libresample
 Version:	0.1.3
-Release:	16
+Release:	17
 License:	LGPLv2
 Group:		System/Libraries
 Url:		http://www-ccrma.stanford.edu/~jos/resample/Available_Software.html
