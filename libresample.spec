@@ -8,7 +8,7 @@ Version:	0.1.3
 Release:	21
 License:	LGPLv2
 Group:		System/Libraries
-Url:		http://www-ccrma.stanford.edu/~jos/resample/Available_Software.html
+Url:		https://www-ccrma.stanford.edu/~jos/resample/Available_Software.html
 Source0:	http://ccrma.stanford.edu/~jos/resample/%{name}-%{version}.tgz
 Patch0:		libresample-shared.diff
 BuildRequires:	libtool
