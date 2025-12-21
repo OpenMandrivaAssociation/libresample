@@ -11,6 +11,11 @@ Group:		System/Libraries
 Url:		https://www-ccrma.stanford.edu/~jos/resample/Available_Software.html
 Source0:	http://ccrma.stanford.edu/~jos/resample/%{name}-%{version}.tgz
 Patch0:		libresample-shared.diff
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	libtool
 BuildRequires:	pkgconfig(sndfile)
 BuildRequires:	pkgconfig(samplerate)
